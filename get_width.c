@@ -15,4 +15,14 @@ char *get_width(char *s, han_s *handler, va_list list)
 	{
 		width = va_arg(list, int);
 		s++;
-
+	}
+	else
+	{
+		while (*s >= 0 && *s <= 9)
+		{
+			width = width * 10 + (*s++ - '0');
+		}
+	}
+	handler->width = width;
+	return (s);
+}

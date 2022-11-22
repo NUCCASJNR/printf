@@ -84,4 +84,6 @@ int get_flags(char c, han_s *f);
 int get_modifier(char *s, han_s *handler);
 char *get_width(char *s, han_s *handler, va_list list);
 
+
+
 #endif /*MAIN_H*/
